@@ -15,7 +15,7 @@ blurb:
     Brad De La Rue is an Audio Visual technician based in Melbourne, Australia.
 
 
-    With experience with everything from bands to corporate shows, theatre to electronics, and many crazy stops along the way, I bring a unique perspective to your events.
+    With experience with everything from bands to corporate shows, theatre to electronics and many crazy stops along the way, I bring a unique perspective to your events.
 
 
     Please reach out if you’d like to work together on your next project.
