@@ -6,6 +6,7 @@ jumbotron:
   item1: Audio
   item2: Multimedia
   item3: Production
+subtitle: " "
 blurb:
   heading_image: img/logo.svg
   heading: bdTechnical
@@ -24,8 +25,8 @@ twoup:
   blurbs:
     - text: Custom electronic design for show control systems
       image: img/gobutton.jpg
-    - text: Relied on for live streaming of large corporate events
-      image: img/icon.svg
+    - text: Sound and production design to bring your show to life
+      image: img/dc7197a1-18a3-4b0b-9c48-8587b1bceee8.jpeg
     - text: Personalised monitoring solutions for better communication
       image: img/icon.svg
 ---
