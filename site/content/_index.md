@@ -1,6 +1,11 @@
 ---
-title: _____ by Brad
-subtitle: (placeholder)
+title: bdTechnical
+jumbotron:
+  title-pre:
+  title-post: by Brad
+  item1: Audio
+  item2: Multimedia
+  item3: Production
 blurb:
   heading: bdTechnical
   text: Brad

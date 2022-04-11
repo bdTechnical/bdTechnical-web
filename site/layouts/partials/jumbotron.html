@@ -1,17 +1,37 @@
-<div class="pv5 pv6-l ph3 bg-center cover" style="background-image: url('{{.imageUrl}}')">
+<div class="pv5 ph3 bg-center cover" style="background-color: var(--grey-4)">
   <div class="mw7 center ph3">
     <div class="db mb3">
       <div class="mw7 relative bg-fix-primary mb3">
         <h1 class="f2 f1-l b di lh-title mb3 white mw6 bg-primary">
-          {{.title}}
+          <!-- text scrolling: start invisible, fade in while scrolling up, wait, fade out, wait long, repeat -->
+          <!-- three items: each takes 33% time -->
+          {{.title-pre}}
+          <style type="text/css">            
+            @keyframes jumbotron-scroll-anim {
+              0%   { opacity: 0; top: 25px; }
+              3%   { opacity: 1; top: 0px; }
+              30%  { opacity: 1; top: 0px; }
+              33%  { opacity: 0; top: 0px; }
+              100% { opacity: 0; top: 0px; }
+            }
+            .jumbotron-text-scroll {
+              display: inline-block;
+              text-align: center;
+            }
+            .jumbotron-text-scroll > li {
+              text-decoration: none;
+              height: 0;
+              position: relative;
+              animation: jumbotron-scroll-anim 6s infinite;
+            }
+          </style>
+          <ul class="jumbotron-text-scroll">
+            <li style="animation-delay: 0s">Audio</li>
+            <li style="animation-delay: 2s">Video</li>
+            <li style="animation-delay: 4s">Multimedia</li>
+          </ul>
+          {{.title-post}}
         </h1>
-      </div>
-      <div class="mw7 relative bg-fix-primary">
-        {{ if .subtitle }}
-        <p class="b f4 di lh-title mb3 white mw6 bg-primary">
-          {{.subtitle}}
-        </p>
-        {{ end }}
       </div>
     </div>
   </div>

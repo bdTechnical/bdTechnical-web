@@ -23,6 +23,13 @@ collections: # A list of collections the CMS should be able to edit
         name: "home"
         fields:
           - {label: Title, name: title, widget: string}
+          - {label: "Jumbotron", name: jumbotron, widget: object, fields: [
+              {label: "Pre-Title", name: "title-pre", widget: string},
+              {label: "Post-Title", name: "title-post", widget: string},
+              {label: "Item 1", name: "item1", widget: string},
+              {label: "Item 2", name: "item2", widget: string},
+              {label: "Item 3", name: "item3", widget: string},
+            ]}
           - {label: Subtitle, name: subtitle, widget: string}
           - {label: "Blurb", name: blurb, widget: object, fields: [
               {label: "Heading", name: "heading", widget: string},
