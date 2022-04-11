@@ -25,9 +25,14 @@
             .jumbotron-text-scroll > li {
               opacity: 0;
               text-decoration: none;
-              height: 0;
               position: relative;
+              height: 1em;
+              margin-bottom: -1em;
               animation: jumbotron-scroll-anim 6s infinite;
+              background: linear-gradient(to right, #03e3fc 0%, #5a03fc 100%);
+              -webkit-background-clip: text;
+              background-clip: text;
+              color: transparent;
             }
           </style>
           <span class="jumbotron-text-blank">
