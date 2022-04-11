@@ -5,7 +5,7 @@ jumbotron:
   title_post: by Brad.
   item1: Audio
   item2: Multimedia
-  item3: Production
+  item3: Technical Production
 subtitle: " "
 blurb:
   heading_image: img/logo.svg
