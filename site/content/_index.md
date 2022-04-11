@@ -15,10 +15,10 @@ twoup:
   heading: Why bdTechnical?
   description: I solve problems in creative ways!
   blurbs:
-    - text: Custom electronic design to suit your unique needs
+    - text: Custom electronic design for show control systems
       image: img/icon.svg
     - text: Relied on for live streaming of large corporate events
       image: img/icon.svg
-    - text: Personalised monitoring solutions
+    - text: Personalised monitoring solutions for better communication
       image: img/icon.svg
 ---
