@@ -24,7 +24,7 @@ twoup:
   description: I solve problems in creative ways!
   blurbs:
     - text: Custom electronic design for show control systems
-      image: img/icon.svg
+      image: img/gobutton.jpg
     - text: Relied on for live streaming of large corporate events
       image: img/icon.svg
     - text: Personalised monitoring solutions for better communication
