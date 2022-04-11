@@ -26,9 +26,10 @@
               opacity: 0;
               text-decoration: none;
               position: relative;
-              height: 1em;
-              margin-bottom: -1em;
+              height: 0;
               animation: jumbotron-scroll-anim 6s infinite;
+            }
+            .jumbotron-text-scroll > li > span {
               background: linear-gradient(to right, #1fc9eb 0%, #4b48f1 100%);
               -webkit-background-clip: text;
               background-clip: text;
@@ -37,9 +38,9 @@
           </style>
           <span class="jumbotron-text-blank">
             <ul class="jumbotron-text-scroll">
-              <li style="animation-delay: 0s">{{.item1}}</li>
-              <li style="animation-delay: 2s">{{.item2}}</li>
-              <li style="animation-delay: 4s">{{.item3}}</li>
+              <li style="animation-delay: 0s"><span>{{.item1}}</span></li>
+              <li style="animation-delay: 2s"><span>{{.item2}}</span></li>
+              <li style="animation-delay: 4s"><span>{{.item3}}</span></li>
             </ul>
           </span>
           {{.title_post}}
