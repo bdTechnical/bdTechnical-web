@@ -2,7 +2,7 @@
 title: bdTechnical
 jumbotron:
   title_pre: " "
-  title_post: by Brad
+  title_post: by Brad.
   item1: Audio
   item2: Multimedia
   item3: Production
