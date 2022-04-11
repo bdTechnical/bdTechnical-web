@@ -2,16 +2,16 @@
 	"name": "",
 	"icons": [
 		{
-			"src": "\/img\/android-chrome-192x192.png",
-			"sizes": "192x192",
+			"src": "\/img\/apple-touch-icon.png",
+			"sizes": "57x57",
 			"type": "image\/png"
 		},
 		{
-			"src": "\/img\/android-chrome-512x512.png",
-			"sizes": "512x512",
+			"src": "\/img\/apple-touch-icon-144x144.png",
+			"sizes": "144x144",
 			"type": "image\/png"
 		}
 	],
-	"theme_color": "#ffffff",
-	"display": "standalone"
+	"theme_color": "#16bfe1",
+	"display": "browser"
 }
