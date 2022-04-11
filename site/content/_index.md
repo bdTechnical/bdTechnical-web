@@ -6,6 +6,7 @@ jumbotron:
   item1: Audio
   item2: Multimedia
   item3: Production
+subtitle: " "
 blurb:
   heading-image: img/logo.svg
   heading: bdTechnical
@@ -19,6 +20,6 @@ twoup:
       image: img/icon.svg
     - text: Relied on for live streaming of large corporate events
       image: img/icon.svg
-    - text: Some third thing
+    - text: Personalised monitoring solutions
       image: img/icon.svg
 ---
