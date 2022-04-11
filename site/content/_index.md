@@ -12,12 +12,12 @@ blurb:
   text: Brad De La Rue is an Audio Visual technician based in Melbourne, Australia.
 twoup:
   heading: Why bdTechnical?
-  description: We solve problems in creative ways!
+  description: I solve problems in creative ways!
   blurbs:
-    - text: Over X years of audio engineering experience
+    - text: Custom electronic design to suit your unique needs
       image: img/icon.svg
     - text: Relied on for live streaming of large corporate events
       image: img/icon.svg
-    - text: etc
+    - text: Some third thing
       image: img/icon.svg
 ---
