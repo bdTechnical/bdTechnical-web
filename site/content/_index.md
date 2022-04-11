@@ -6,11 +6,19 @@ jumbotron:
   item1: Audio
   item2: Multimedia
   item3: Production
+subtitle: " "
 blurb:
-  heading_image: img/logo.svg
+  heading-image: img/logo.svg
   heading: bdTechnical
   subheading: by Brad De La Rue
-  text: Brad De La Rue is an Audio Visual technician based in Melbourne, Australia.
+  text: >-
+    Brad De La Rue is an Audio Visual technician based in Melbourne, Australia.
+
+
+    With experience with everything from bands to corporate shows, theatre to electronics, and many crazy stops along the way, I bring a unique perspective to your events.
+
+
+    Please reach out if you’d like to work together on your next project.
 twoup:
   heading: Why bdTechnical?
   description: I solve problems in creative ways!
