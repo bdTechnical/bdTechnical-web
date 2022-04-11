@@ -1,5 +1,5 @@
 ---
-title: bdTechnical
+title: _____ by Brad
 jumbotron:
   title_pre: " "
   title_post: by Brad.
