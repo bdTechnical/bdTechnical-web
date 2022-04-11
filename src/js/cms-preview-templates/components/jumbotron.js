@@ -2,7 +2,7 @@ import React from "react";
 
 export default class Jumbotron extends React.Component {
   render() {
-    const {title} = this.props;
+    const {title_pre, title_post} = this.props;
     return <div>
       <div className="pv5 pv6-l ph3 bg-center cover" style={{
         backgroundColor: `var(--grey-4)`
