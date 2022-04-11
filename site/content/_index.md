@@ -4,8 +4,8 @@ jumbotron:
   title_pre: " "
   title_post: by Brad.
   item1: Audio
-  item2: Multimedia
-  item3: Technical Production
+  item2: Vision
+  item3: Streaming
 subtitle: " "
 blurb:
   heading_image: img/logo.svg
