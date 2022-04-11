@@ -11,7 +11,7 @@ export default class Jumbotron extends React.Component {
           <div className="db mb3">
             <div className="mw7 relative bg-fix-primary mb3">
               <h1 className="f2 f1-l b di lh-title mb3 white mw6">
-                {entry.getIn(["data", "jumbotron", "title_pre"])} _____ {entry.getIn(["data", "jumbotron", "title_post"])}
+              { title_pre } _____ { title_post }
               </h1>
             </div>
           </div>
