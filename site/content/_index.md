@@ -6,9 +6,8 @@ jumbotron:
   item1: Audio
   item2: Multimedia
   item3: Production
-subtitle: " "
 blurb:
-  heading-image: img/logo.svg
+  heading_image: img/logo.svg
   heading: bdTechnical
   subheading: by Brad De La Rue
   text: >-
