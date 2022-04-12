@@ -1,4 +1,4 @@
-{{ $bannerposts := ( where (where .Site.Pages "Type" "post”) ".Params.banner" "=" true ) }}
+{{ $bannerposts := ( where (where .Data.Pages "Type" "post”) ".Params.banner" "=" true ) }}
 {{ if $bannerposts }}
   <div class="pa1 cover bg-highlight white">
     <div class="measure-narrow center">
