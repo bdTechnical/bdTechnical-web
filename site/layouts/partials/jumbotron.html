@@ -5,13 +5,14 @@
         <h1 class="f2 f1-l b di lh-title mb3 white mw6">
           <!-- text scrolling: start invisible, fade in while scrolling up, wait, fade out, wait long, repeat -->
           <!-- three items: each takes 33% time -->
+          {{ $jumbo_item_time_pct := (div 100 (len .items)) }}
           {{.title_pre}}
           <style type="text/css">            
             @keyframes jumbotron-scroll-anim {
               0%   { opacity: 0; top: 25px; }
-              3%   { opacity: 1; top: 0px; }
-              30%  { opacity: 1; top: 0px; }
-              33%  { opacity: 0; top: 0px; }
+              {{ mul 0.1 $jumbo_item_time_pct }}%   { opacity: 1; top: 0px; }
+              {{ mul 0.9 $jumbo_item_time_pct }}%  { opacity: 1; top: 0px; }
+              {{ $jumbo_item_time_pct }}%  { opacity: 0; top: 0px; }
               100% { opacity: 0; top: 0px; }
             }
             .jumbotron-text-blank {
@@ -27,7 +28,7 @@
               text-decoration: none;
               position: relative;
               height: 0;
-              animation: jumbotron-scroll-anim 6s infinite;
+              animation: jumbotron-scroll-anim {{ mul 2 (len .items) }}s infinite;
             }
             .jumbotron-text-scroll > li > span {
               background: linear-gradient(to right, #1fc9eb 0%, #4b48f1 100%);
@@ -38,9 +39,9 @@
           </style>
           <span class="jumbotron-text-blank">
             <ul class="jumbotron-text-scroll">
-              <li style="animation-delay: 0s"><span>{{.item1}}</span></li>
-              <li style="animation-delay: 2s"><span>{{.item2}}</span></li>
-              <li style="animation-delay: 4s"><span>{{.item3}}</span></li>
+              {{ range $idx, $itm := .items }}
+                <li style="animation-delay: {{ mul 2 $idx }}s"><span>{{$itm.text}}</span></li>
+              {{ end }}
             </ul>
           </span>
           {{.title_post}}

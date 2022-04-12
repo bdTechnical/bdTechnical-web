@@ -3,9 +3,10 @@ title: _____ by Brad
 jumbotron:
   title_pre: " "
   title_post: by Brad.
-  item1: Audio
-  item2: Vision
-  item3: Streaming
+  items:
+    - text: Audio
+    - text: Vision
+    - text: Streaming
 subtitle: " "
 blurb:
   heading_image: img/logo-dark.svg

@@ -26,9 +26,9 @@ collections: # A list of collections the CMS should be able to edit
           - {label: "Jumbotron", name: jumbotron, widget: object, fields: [
               {label: "Pre-Title", name: "title_pre", widget: string},
               {label: "Post-Title", name: "title_post", widget: string},
-              {label: "Item 1", name: "item1", widget: string},
-              {label: "Item 2", name: "item2", widget: string},
-              {label: "Item 3", name: "item3", widget: string},
+              {label: "Items", name: items, widget: list, fields: [
+                {label: "Text", name: "text", widget: string},
+              ]}
             ]}
           - {label: "Blurb", name: blurb, widget: object, fields: [
               {label: "Heading Image", name: "heading_image", widget: "image"},
