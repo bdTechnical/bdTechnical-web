@@ -1,6 +1,6 @@
 ---
 title: "ALERT: This is a banner"
-banner: "true"
+banner: true
 description: Must be pretty important...
 image: img/logo-dark.svg
 ---
