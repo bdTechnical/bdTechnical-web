@@ -3,7 +3,7 @@
     <div class="db mb3">
       <div class="mw7 relative bg-fix-primary mb3">
         {{ if .items }}
-        <h1 class="f2 f1-l b di lh-title mb3 white mw6">
+        <h1 class="f2 f1-l b di lh-title mb3 white mw6" style="user-select: none">
           <!-- text scrolling: start invisible, fade in while scrolling up, wait, fade out, wait long, repeat -->
           <!-- three items: each takes 33% time -->
           {{ $jumbo_item_time_pct := (div 100 (len .items)) }}
