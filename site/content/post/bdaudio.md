@@ -1,6 +1,6 @@
 ---
 title: bdAudio is now bdTechnical
-banner: false
+banner: true
 description: New name, same Brad!
 ---
 After many years as bdAudio, it’s time I update my name to reflect all of the things that I do as a freelance technician, electronics designer, and AV hire company.
