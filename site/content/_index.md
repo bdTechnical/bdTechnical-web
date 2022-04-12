@@ -1,4 +1,6 @@
 ---
+aliases:
+  - /post/
 title: _____ by Brad
 jumbotron:
   title_pre: " "
