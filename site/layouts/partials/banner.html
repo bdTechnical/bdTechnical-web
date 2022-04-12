@@ -4,7 +4,7 @@
     <div class="measure-narrow center">
       <ul class="list pl0">
         {{ range $bannerposts }}
-          <li>{{ .Page.Title }}" | " <a href="{{ .Page.RelPermalink }}">"More info"</a></li>
+          <li>{{ .Page.Title }} - {{.Page.Description}} | <a href="{{ .Page.RelPermalink }}">More info</a></li>
         {{ end }}
       </ul>
     </div>
