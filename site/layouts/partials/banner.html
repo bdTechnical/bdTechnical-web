@@ -1,7 +1,7 @@
 {{ $bannerposts := ( where (where .Site.Pages "Type" "post") ".Params.banner" "=" true ) }}
 {{ if $bannerposts }}
   <div class="pa1 cover bg-highlight white">
-    <div class="measure-narrow center">
+    <div class="center" style="width: fit-content">
       <ul class="list pl0">
         {{ range $bannerposts }}
           <li>{{ .Page.Title }} - {{.Page.Description}} | <a href="{{ .Page.RelPermalink }}">More info</a></li>
