@@ -40,5 +40,5 @@ twoup:
     - text: Sound and production design to bring your show to life
       image: img/dc7197a1-18a3-4b0b-9c48-8587b1bceee8.jpeg
     - image: img/e28518cc-ee14-4d83-8eeb-d9f2d9c4be9f.jpeg
-      text: Stream production and operating
+      text: Stream production and operating for events
 ---
