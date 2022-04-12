@@ -1,6 +1,6 @@
 ---
 title: Contact
-logo: /img/logo.svg
+logo: /img/logo-dark.svg
 contact_entries:
   - heading: Location
     text: |-

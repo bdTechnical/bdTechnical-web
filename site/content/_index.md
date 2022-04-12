@@ -8,7 +8,7 @@ jumbotron:
   item3: Streaming
 subtitle: " "
 blurb:
-  heading_image: img/logo.svg
+  heading_image: img/logo-dark.svg
   heading: bdTechnical
   subheading: by Brad De La Rue
   text: >-
