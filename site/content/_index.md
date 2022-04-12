@@ -15,6 +15,7 @@ jumbotron:
     - text: Corporate
     - text: Activations
     - text: Design
+    - text: Training
 subtitle: " "
 blurb:
   heading_image: img/logo-dark.svg
