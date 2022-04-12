@@ -1,5 +1,5 @@
 ---
-title: bdAudio is becoming bdTechnical
+title: bdAudio is now bdTechnical
 banner: true
 description: New name, same great service!
 ---
