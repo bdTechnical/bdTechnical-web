@@ -1,6 +1,6 @@
 {{ $bannerposts := ( where (where .Site.Pages "Type" "post") ".Params.banner" "=" true ) }}
 {{ if $bannerposts }}
-  <div class="pa1 cover bg-highlight white">
+  <div class="f6 f5-m pa1 cover bg-highlight white">
     <div class="center" style="width: fit-content">
       <ul class="list pl0">
         {{ range $bannerposts }}
