@@ -4,7 +4,7 @@ export default class Jumbotron extends React.Component {
   render() {
     const {title_pre, title_post} = this.props;
     return <div>
-      <div className="pv5 pv6-l ph3 bg-center cover bg-grey-4">
+      <div className="pv4 pv6-l ph3 bg-center cover bg-grey-4">
         <div className="mw7 center ph3">
           <div className="db mb3">
             <div className="mw7 relative bg-fix-primary mb3">
