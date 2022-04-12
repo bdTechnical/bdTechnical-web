@@ -27,6 +27,4 @@ twoup:
       image: img/gobutton.jpg
     - text: Sound and production design to bring your show to life
       image: img/dc7197a1-18a3-4b0b-9c48-8587b1bceee8.jpeg
-    - text: Personalised monitoring solutions for better communication
-      image: img/icon.svg
 ---
