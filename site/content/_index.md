@@ -6,7 +6,15 @@ jumbotron:
   items:
     - text: Audio
     - text: Vision
+    - text: Lighting
     - text: Streaming
+    - text: Production
+    - text: Electronics
+    - text: Events
+    - text: Theatre
+    - text: Corporate
+    - text: Activations
+    - text: Design
 subtitle: " "
 blurb:
   heading_image: img/logo-dark.svg
