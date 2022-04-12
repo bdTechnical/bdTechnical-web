@@ -42,7 +42,7 @@ collections: # A list of collections the CMS should be able to edit
                 {label: "Image", name: "image", widget: "image"},
                 {label: "Text", name: "text", widget: "text"}]}
               ]}
-      - file: "site/content/contact/_index.md"
+      - file: "site/content/contact/index.md"
         label: "Contact Page"
         name: "contact"
         fields:
