@@ -8,10 +8,10 @@
         <div class="ph2-ns w-50-ns mb4 center" style="max-width: 360px">
           {{ with resources.Get (trim .image "/") }}
             {{ with .Fill "720x720 Smart png" }}
-              {{ $240 = .Resize "240x240 jpg q80" }}
-              {{ $480 = .Resize "480x480 jpg q80" }}
-              {{ $720 = .Resize "720x720 jpg q80" }}
-              <img srcset="{{ $240.RelPermalink }} 1x, {{ $480.RelPermalink }} 2x, {{ $720.RelPermalink }} 3x" src="{{ .RelPermalink }}" alt="" class="center db mb3" style="width: 240px; height: 240px; border-radius: 40%; object-fit: cover;">
+              {{ $240 := .Resize "240x240 jpg q80" }}
+              {{ $480 := .Resize "480x480 jpg q80" }}
+              {{ $720 := .Resize "720x720 jpg q80" }}
+              <img srcset="{{ $240.RelPermalink }} 1x, {{ $480.RelPermalink }} 2x, {{ $720.RelPermalink }} 3x" src="{{ $720.RelPermalink }}" alt="" class="center db mb3" style="width: 240px; height: 240px; border-radius: 40%; object-fit: cover;">
             {{ end }}
           {{ end }}
           <p>{{ .text }}</p>
