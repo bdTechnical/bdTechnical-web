@@ -12,3 +12,11 @@ disableKinds = ["RSS", "taxonomy", "taxonomyTerm"]
 [[module.mounts]]
   source = 'static'
   target = 'assets'
+
+[imaging]
+  anchor = 'Smart'
+  bgColor = '#ffffff'
+  hint = 'photo'
+  quality = 80
+  resampleFilter = 'Lanczos'
+
