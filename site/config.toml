@@ -8,4 +8,7 @@ title = "bdTechnical"
 # https://gohugo.io/getting-started/configuration/#toml-configuration
 disableKinds = ["RSS", "taxonomy", "taxonomyTerm"]
 
-assetDir = "site/static"
+[module]
+[[module.mounts]]
+  source = 'static'
+  target = 'assets'
