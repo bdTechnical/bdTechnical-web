@@ -6,6 +6,7 @@
     <div class="flex-ns flex-wrap mhn2-ns mb3 tc">
       {{ range .blurbs }}
         <div class="ph2-ns w-50-ns mb4 center" style="max-width: 360px">
+          {{ (trim .image "/") }}
           {{ $image := .Resources.Get (trim .image "/") }}
           {{ $image := $image.Fill "720x720" }}
           {{ with $image }}
