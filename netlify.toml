@@ -8,3 +8,10 @@
 
 [context.deploy-preview]
   command = "yarn build:preview"
+
+[[redirects]]
+  from = "/post"
+  status = 404
+[[redirects]]
+  from = "/post/index.html"
+  status = 404
