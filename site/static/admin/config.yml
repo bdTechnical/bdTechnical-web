@@ -34,7 +34,7 @@ collections: # A list of collections the CMS should be able to edit
               {label: "Heading Image", name: "heading_image", widget: "image"},
               {label: "Heading", name: "heading", widget: string},
               {label: "Subheading", name: "subheading", widget: string},
-              {label: "Text", name: "text", widget: "text"}]}
+              {label: "Text", name: "text", widget: "markdown"}]}
           - {label: "Key Points", name: twoup, widget: object, fields: [
               {label: "Heading", name: "heading", widget: string},
               {label: "Description", name: "description", widget: "text"},
