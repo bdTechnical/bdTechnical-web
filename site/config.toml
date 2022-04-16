@@ -7,3 +7,16 @@ title = "bdTechnical"
 # See configuration options for more details: 
 # https://gohugo.io/getting-started/configuration/#toml-configuration
 disableKinds = ["RSS", "taxonomy", "taxonomyTerm"]
+
+[module]
+[[module.mounts]]
+  source = 'static'
+  target = 'assets'
+
+[imaging]
+  anchor = 'Smart'
+  bgColor = '#ffffff'
+  hint = 'photo'
+  quality = 80
+  resampleFilter = 'Lanczos'
+

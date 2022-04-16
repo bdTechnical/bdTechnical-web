@@ -1,15 +1,22 @@
 <div class="bg-off-white black pv4">
-	<div class="ph3 mw7 center">
-		<h2 class="f2 b lh-title mb2">{{.heading}}</h2>
-		<p class="mb4 mw6">{{.description}}</p>
+  <div class="ph3 mw7 center">
+    <h2 class="f2 b lh-title mb2">{{.heading}}</h2>
+    <p class="mb4 mw6">{{.description}}</p>
 
-		<div class="flex-ns flex-wrap mhn2-ns mb3 tc">
-			{{ range .blurbs }}
-				<div class="ph2-ns w-50-ns mb4 center" style="max-width: 360px">
-					<img src="{{ .image }}" alt="" class="center db mb3" style="width: 240px; height: 240px; border-radius: 40%; object-fit: cover;">
-					<p>{{ .text }}</p>
-				</div>
-			{{ end }}
-		</div>
-	</div>
+    <div class="flex-ns flex-wrap mhn2-ns mb3 tc">
+      {{ range .blurbs }}
+        <div class="ph2-ns w-33-ns mb4 center" style="min-width: 260px; max-width: 360px;">
+          {{ with resources.Get (trim .image "/") }}
+            {{ with .Fill "720x720 png" }}
+              {{ $240 := .Resize "240x240 jpg" }}
+              {{ $480 := .Resize "480x480 jpg" }}
+              {{ $720 := .Resize "720x720 jpg" }}
+              <img srcset="{{ $240.RelPermalink }} 1x, {{ $480.RelPermalink }} 2x, {{ $720.RelPermalink }} 3x" src="{{ $720.RelPermalink }}" alt="" class="center db mb3" style="width: 240px; height: 240px; border-radius: 40%; object-fit: cover;">
+            {{ end }}
+          {{ end }}
+          <p>{{ .text }}</p>
+        </div>
+      {{ end }}
+    </div>
+  </div>
 </div>
