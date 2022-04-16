@@ -22,7 +22,7 @@ export default class PostPreview extends React.Component {
               <h2 className="f2 b"><img src={getAsset(entry.getIn(["data", "blurb", "heading_image"]))} style={{width: "13rem"}}/><br />{entry.getIn(["data", "blurb", "heading"])}</h2>
               <h3 className="f4">{entry.getIn(["data", "blurb", "subheading"])}</h3>
             </div>
-            <div className="w-60-l mb0">{ widgetsFor("blurb").getIn(["data", "text"]) }</div>
+            <div className="w-60-l mb0">{ widgetsFor("blurb").getIn(["widgets", "text"]) }</div>
           </div>
         </div>
 
