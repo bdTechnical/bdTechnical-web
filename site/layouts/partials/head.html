@@ -1,5 +1,4 @@
 <head>
-
   <title>{{ .Title }} | {{ $.Site.Title }}</title>
 
   {{ $stylesheet := .Site.Data.webpack.main }}
@@ -7,25 +6,25 @@
     <link href="{{ relURL . }}" rel="stylesheet">
   {{ end }}
 
-	<meta charset="utf-8">
-	<meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <base href="{{ if getenv "CONTEXT" }}{{ cond (eq "production" (getenv "CONTEXT")) (getenv "URL") (getenv "DEPLOY_PRIME_URL") }}{{ else }}{{ $.Site.BaseURL }}{{ end }}">
 
-	<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,400;0,700;1,400&display=fallback" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,400;0,700;1,400&display=fallback" rel="stylesheet">
 
-	<!-- Favicons -->
-	<link rel="apple-touch-icon" href="/img/apple-touch-icon.png">
-	<link rel="apple-touch-icon" sizes="144x144" href="/img/apple-touch-icon-144x144.png">
-	<link rel="icon" type="image/png" href="/img/favicon.png">
-	<link rel="manifest" href="/manifest.json">
-	<meta name="theme-color" content="#16bfe1">
+  <!-- Favicons -->
+  <link rel="apple-touch-icon" href="/img/apple-touch-icon.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/img/apple-touch-icon-144x144.png">
+  <link rel="icon" type="image/png" href="/img/favicon.png">
+  <link rel="manifest" href="/manifest.json">
+  <meta name="theme-color" content="#16bfe1">
 
-	<!-- Open Graph -->
-	<meta property="og:type" content="business.business">
-	<meta property="og:title" content="_____ by Brad | bdTechnical">
-	<meta property="og:url" content="/">
-	<meta property="og:image" content="/img/og-image.jpg">
+  <!-- Open Graph -->
+  <meta property="og:type" content="business.business">
+  <meta property="og:title" content="_____ by Brad | bdTechnical">
+  <meta property="og:url" content="/">
+  <meta property="og:image" content="/img/og-image.jpg">
 
   {{ if .IsHome }}
     <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
