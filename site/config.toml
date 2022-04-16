@@ -20,3 +20,5 @@ disableKinds = ["RSS", "taxonomy", "taxonomyTerm"]
   quality = 80
   resampleFilter = 'Lanczos'
 
+[minify]
+  minifyOutput = true
