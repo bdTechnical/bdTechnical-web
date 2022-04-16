@@ -11,11 +11,11 @@
 
 [[redirects]]
   from = "/post"
-  to = "/"
+  to = "/404"
   status = 404
   force = true
 [[redirects]]
   from = "/post/index.html"
-  to = "/"
+  to = "/404"
   status = 404
   force = true
