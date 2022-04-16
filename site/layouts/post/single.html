@@ -3,7 +3,27 @@
   <div class="mw6 center ph3 pv4">
     <h1 class="f2 lh-title b mb3">{{.Title}}</h1>
     <div class="cms mw6">
-      {{ if .Params.image }}<img src="{{ .Params.image }}" alt="{{ .Title }}" />{{ end }}
+      {{ with resources.Get (trim .image "/") }}
+        <picture>
+          <!-- narrow version for narrow displays -->
+          {{ with .Fill "2560x2160 png" }}
+            {{ $640 := .Resize "640x jpg" }}
+            {{ $1280 := .Resize "1280x jpg" }}
+            {{ $1920 := .Resize "1920x jpg" }}
+            {{ $2560 := .Resize "2560x jpg" }}
+            <source media="(max-width: 479px)" srcset="{{ $640.RelPermalink }} 640w, {{ $1280.RelPermalink }} 1280w, {{ $1920.RelPermalink }} 1920w, {{ $2560.RelPermalink }} 2560w">
+          {{ end }}
+          <!-- 16:9 for desktop -->
+          {{ with .Fill "2560x1440 png" }}
+            {{ $640 := .Resize "640x jpg" }}
+            {{ $1280 := .Resize "1280x jpg" }}
+            {{ $1920 := .Resize "1920x jpg" }}
+            {{ $2560 := .Resize "2560x jpg" }}
+            <source media="(min-width: 480px)" srcset="{{ $640.RelPermalink }} 640w, {{ $1280.RelPermalink }} 1280w, {{ $1920.RelPermalink }} 1920w, {{ $2560.RelPermalink }} 2560w">
+            <img src="{{ $1920.RelPermalink }}" alt="{{ .Title }}">
+          {{ end }}
+        </picture>
+      {{ end }}
       {{ .Content }}
     </div>
   </div>
