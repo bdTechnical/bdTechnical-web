@@ -47,6 +47,10 @@
           </span>
           {{.title_post}}
         </h1>
+        {{ else }}
+        <h1 class="f2 f1-m b di lh-title mb3 white mw6">
+          {{.title_pre}}{{.title}}{{.title_post}}
+        </h1>
         {{ end }}
       </div>
     </div>

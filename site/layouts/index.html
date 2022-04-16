@@ -2,7 +2,7 @@
 
 {{ partial "jumbotron" .Params.jumbotron }}
 
-{{ partial "landing-lead" .Params.blurb }}
+{{ partial "landing-lead" ( dict "heading_image" .Params.blurb.heading_image "heading" .Params.blurb.heading "subheading" .Params.blurb.subheading "text" (.Params.blurb.text | .RenderString) ) }}
 
 {{ partial "4-up" .Params.twoup }}
 
