@@ -3,7 +3,7 @@
   <div class="mw6 center ph3 pv4">
     <h1 class="f2 lh-title b mb3">{{.Title}}</h1>
     <div class="cms mw6">
-      {{ with resources.Get (trim .image "/") }}
+      {{ with resources.Get (trim .Params.image "/") }}
         <picture>
           <!-- narrow version for narrow displays -->
           {{ with .Fill "2560x2160 png" }}
